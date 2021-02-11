@@ -8,26 +8,26 @@
 * Specifically:
   * checks if GS1 DL URIs only comprise the primary identifier at the lowest, i.e. most precise level so that they correspond to the EPC URI/EPC Class URI schemes as defined in the EPC Tag Data Standard
   * accepts any user domain/sub-domain (i.e. not just canonical GS1 DL URIs)
- * checks that if a GS1 DL URI includes a GTIN, the latter is represented in its 14-digit format so that it is consistent with the definition of GS1 Application Identifier '01' 
+  * checks that if a GS1 DL URI includes a GTIN, the latter is represented in its 14-digit format so that it is consistent with the definition of GS1 Application Identifier '01' 
 * Input: list of Digital Link URIs (as they are intended to populate the epcList/quantityList)
 * Output: list of Boolean values, in identical order as the input list, either 'True' (if conformant) or 'false' (if not) for each list element
 * Supported instance-level keys/compound keys: 
- * SSCC 
- * GTIN + Serial (SGTIN)
- * UPUI
- * GDTI with serial
- * GCN with serial
- * GINC
- * GSIN 
+  * SSCC 
+  * GTIN + Serial (SGTIN)
+  * UPUI
+  * GDTI with serial
+  * GCN with serial
+  * GINC
+  * GSIN 
 * Supported class-level keys/compound keys: 
- * GTIN
- * GTIN + Lot (LGTIN)
- * GDTI without serial
- * GCN without serial
+  * GTIN
+  * GTIN + Lot (LGTIN)
+  * GDTI without serial
+  * GCN without serial
 * Supported location/party keys:
- * GLN with extension
- * GLN without extension
- * Party GLN
+  * GLN with extension
+  * GLN without extension
+  * Party GLN
 
 ### Status: DRAFT (for discussion purposes)
 
