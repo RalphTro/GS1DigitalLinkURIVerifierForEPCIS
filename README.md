@@ -61,6 +61,7 @@ DRAFT (for discussion purposes)
 * Regular Expressions are not identical in all programming languages. In this context, this Jupyter Notebook [https://jupyter.org] is based on Python [https://www.python.org/] and makes use of some simplifications enabled by Python's regular expressions module [https://docs.python.org/3/library/re.html], e.g. RegEx annotations and raw string notation for better readability and comprehensibility.  
 * For the normative Regular Expressions, please refer to the CBV 2.0 standard, available at [https://www.gs1.org/standards/epcis]. 
 
+## License
 
 <img alt="MIT" style="border-width:0" src="https://opensource.org/files/OSIApproved_1.png" width="150px;"/><br />
 
