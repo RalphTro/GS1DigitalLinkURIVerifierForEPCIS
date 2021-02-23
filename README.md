@@ -37,25 +37,24 @@
   * GLN with extension
   * GLN without extension
   * Party GLN
+* Cases covered through invalid examples (i.e. those returning 'False'):
+  * GTIN not formatted as GTIN-14 (i.e. corresponding to definition of GS1 Application Identifier (AI) '01')
+  * Applying short names instead of AI equivalents
+  * GTIN-based GS1 DL URI comprising consumer product variant (AI '22') 
+  * GTIN-based GS1 DL URI comprising lot (AI 10) AND serial (AI 21) as key qualifiers (note: only one is allowed at a time)
+  * Containing characters that need to be percent-encoded 
+  * Ending with a trailing slash 
+  * AI equivalents in the query string
+  * Custom extensions in the query string
+  * Comprising non-existent AIs
+  * Data payload (e.g. serial number) exceeding character limit as defined per GS1 General Specifications
+  * Empty fields (e.g. batch number or serial number without content)
+  * Lacking a domain name
+  * Containing space characters
+  * Class-level (instead of instance-level) ID and vice versa
 
 ### Status
 DRAFT (for discussion purposes)
-
-### Cases covered through invalid examples (i.e. those returning 'False')
-* GTIN not formatted as GTIN-14 (i.e. corresponding to definition of GS1 Application Identifier (AI) '01')
-* Applying short names instead of AI equivalents
-* GTIN-based GS1 DL URI comprising consumer product variant (AI '22') 
-* GTIN-based GS1 DL URI comprising lot (AI 10) AND serial (AI 21) as key qualifiers (note: only one is allowed at a time)
-* Containing characters that need to be percent-encoded 
-* Ending with a trailing slash 
-* AI equivalents in the query string
-* Custom extensions in the query string
-* Comprising non-existent AIs
-* Data payload (e.g. serial number) exceeding character limit as defined per GS1 General Specifications
-* Empty fields (e.g. batch number or serial number without content)
-* Lacking a domain name
-* Containing space characters
-* Class-level (instead of instance-level) ID and vice versa
 
 ### Notes and references 
 * Regular Expressions are not identical in all programming languages. In this context, this Jupyter Notebook [https://jupyter.org] is based on Python [https://www.python.org/] and makes use of some simplifications enabled by Python's regular expressions module [https://docs.python.org/3/library/re.html], e.g. RegEx annotations and raw string notation for better readability and comprehensibility.  
