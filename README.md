@@ -7,11 +7,11 @@
 ### Functionality
 * Checks whether a list of GS1 DL URIs conforms to the constrained syntax as defined in CBV 2.0
 * Specifically:
- * checks if GS1 DL URIs only comprise the primary identifier at the lowest, i.e. most precise level so that they correspond to the EPC URI/EPC Class URI schemes as defined in the EPC Tag Data Standard
- * accepts any user domain/sub-domain (i.e. not just canonical GS1 DL URIs)
- * checks that if a GS1 DL URI includes a GTIN, the latter is represented in its 14-digit format so that it is consistent with the definition of GS1 Application Identifier '01' 
-* Input: list of Digital Link URIs (e.g. as they are intended to populate the epcList/quantityList)
-* Output: dictionary (JSON object) which contains, for all entries of the input list, key-value pairs with the contained GS1 DL URIs and corresponding Boolean values - either 'True' (if conformant) or 'false' (if not)
+  * checks if GS1 DL URIs only comprise the primary identifier at the lowest, i.e. most precise level so that they correspond to the EPC URI/EPC Class URI schemes as defined in the EPC Tag Data Standard
+  * accepts any user domain/sub-domain (i.e. not just canonical GS1 DL URIs)
+  * checks that if a GS1 DL URI includes a GTIN, the latter is represented in its 14-digit format so that it is consistent with the definition of GS1 Application Identifier '01' 
+ * Input: list of Digital Link URIs (e.g. as they are intended to populate the epcList/quantityList)
+ * Output: dictionary (JSON object) which contains, for all entries of the input list, key-value pairs with the contained GS1 DL URIs and corresponding Boolean values - either 'True' (if conformant) or 'false' (if not)
 * Supported instance-level keys/compound keys: 
   * SSCC 
   * GTIN + Serial (SGTIN)
