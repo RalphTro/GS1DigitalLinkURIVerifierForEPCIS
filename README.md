@@ -33,7 +33,7 @@
   * SGCN without serial
   * GRAI without serial 
   * CPI without serial
-* Supported location/party keys:
+* Supported location/party keys/compound keys:
   * GLN with extension
   * GLN without extension
   * Party GLN
