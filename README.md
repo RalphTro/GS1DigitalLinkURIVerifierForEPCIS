@@ -1,8 +1,8 @@
 # GS1 Digital Link URI Verifier for EPCIS
 
 ### Purpose of this Jupyter Notebook
-* Basis for discussion in EPCIS/CBV 2.0 MSWG
-* Potential starting point of an open source artefact to help in applying constrained GS1 Digital Link URIs for populating EPCIS events 
+* Basis for discussion in EPCIS/CBV 2.0 MSWG.
+* Potential open source artefact to help in applying GS1 Digital Link URIs for populating EPCIS events, specifically for checking if given instance-level/class-level object, location and party IDs adhere to the 'constrained' syntax of GS1 Digital Link URIs.
 
 ### Functionality
 * Checks whether a list of GS1 DL URIs conforms to the constrained syntax as defined in CBV 2.0
@@ -10,8 +10,8 @@
  * checks if GS1 DL URIs only comprise the primary identifier at the lowest, i.e. most precise level so that they correspond to the EPC URI/EPC Class URI schemes as defined in the EPC Tag Data Standard
  * accepts any user domain/sub-domain (i.e. not just canonical GS1 DL URIs)
  * checks that if a GS1 DL URI includes a GTIN, the latter is represented in its 14-digit format so that it is consistent with the definition of GS1 Application Identifier '01' 
-* Input: list of Digital Link URIs (as they are intended to populate the epcList/quantityList)
-* Output: dictionary (JSON object) which contains, for all entries of the input list, key-value pairs with the contained GS1 DL URIs and a corresponding Boolean value - either 'True' (if conformant) or 'false' (if not)
+* Input: list of Digital Link URIs (e.g. as they are intended to populate the epcList/quantityList)
+* Output: dictionary (JSON object) which contains, for all entries of the input list, key-value pairs with the contained GS1 DL URIs and corresponding Boolean values - either 'True' (if conformant) or 'false' (if not)
 * Supported instance-level keys/compound keys: 
   * SSCC 
   * GTIN + Serial (SGTIN)
@@ -60,6 +60,7 @@ DRAFT (for discussion purposes)
 * For the normative Regular Expressions, please refer to the CBV 2.0 standard, available at [https://www.gs1.org/standards/epcis]. 
 * Regular Expressions are not identical in all programming languages. In this context, this Jupyter Notebook [https://jupyter.org] is based on Python [https://www.python.org/] and makes use of some simplifications enabled by Python's regular expressions ('re') module [https://docs.python.org/3/library/re.html], e.g. RegEx annotations and raw string notation for better readability and comprehensibility.
 * Further, it makes use of metacharacters ('\d' instead of '0-9' and '\w' instead of 'a-zA-Z0-9_') for the sake of brevity.
+* GS1 Digital Link Standard: URI Syntax, Release 1.2, Ratified, Jan 2021 [https://www.gs1.org/standards/gs1-digital-link] 
 
 ## License
 
