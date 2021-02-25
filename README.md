@@ -1,8 +1,8 @@
 # GS1 Digital Link URI Verifier for EPCIS
 
 ### Purpose of this Jupyter Notebook
-* Basis for discussion in EPCIS/CBV 2.0 MSWG.
-* Potential open source artefact to help in applying GS1 Digital Link URIs for populating EPCIS events, particularly for checking if given instance-level/class-level object, location and party IDs adhere to the 'constrained' syntax of GS1 Digital Link URIs.
+* Originally set up to develop Regular Exressions for constrained GS1 Digital Link URIs as a basis for discussion in the EPCIS/CBV 2.0 Mission Specific Working Group.
+* Beyond that, potential open source artefact to help in applying GS1 Digital Link URIs for populating EPCIS events, particularly for checking if given instance-level/class-level object, location and party IDs adhere to the 'constrained' syntax of GS1 Digital Link URIs.
 
 ### Functionality
 * Checks whether a list of GS1 DL URIs conforms to the constrained syntax as defined in CBV 2.0
