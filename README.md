@@ -14,16 +14,16 @@
 * **Output:** dictionary (JSON object) which contains, for all entries of the input list, key-value pairs with the contained GS1 DL URIs and corresponding Boolean values - either 'True' (if conformant) or 'false' (if not)
 * Supported instance-level keys/compound keys: 
   * SSCC 
-  * GTIN + Serial (SGTIN)
+  * GTIN with serial (SGTIN)
   * UPUI
   * GDTI with serial
   * SGCN with serial
   * GINC
   * GSIN 
-  * GRAI
+  * GRAI with serial
   * GIAI
   * ITIP
-  * CPI
+  * CPI with serial
   * GSRN
   * GSRNP
 * Supported class-level keys/compound keys: 
