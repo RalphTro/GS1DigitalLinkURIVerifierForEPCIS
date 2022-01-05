@@ -66,7 +66,7 @@ DRAFT (for discussion purposes)
 
 <img alt="MIT" style="border-width:0" src="https://opensource.org/files/OSIApproved_1.png" width="150px;"/><br />
 
-Copyright 2021 | Ralph Tröger <ralph.troeger@gs1.de>
+Copyright 2021/22 | Ralph Tröger <ralph.troeger@gs1.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
