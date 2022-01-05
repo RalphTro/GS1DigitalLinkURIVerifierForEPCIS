@@ -59,7 +59,6 @@ DRAFT (for discussion purposes)
 ### Notes and references 
 * For the normative Regular Expressions, please refer to the CBV 2.0 standard, available at [https://www.gs1.org/standards/epcis]. 
 * Regular Expressions are not identical in all programming languages. In this context, this Jupyter Notebook [https://jupyter.org] is based on Python [https://www.python.org/] and makes use of some simplifications enabled by Python's regular expressions ('re') module [https://docs.python.org/3/library/re.html], e.g. RegEx annotations and raw string notation for better readability and comprehensibility.
-* Further, it makes use of metacharacters ('\d' instead of '0-9' and '\w' instead of 'a-zA-Z0-9_') for the sake of brevity.
 * GS1 Digital Link Standard: URI Syntax, Release 1.2, Ratified, Jan 2021 [https://www.gs1.org/standards/gs1-digital-link] 
 
 ## License
